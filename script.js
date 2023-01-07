@@ -8,14 +8,31 @@ let arr = [
 
 function PrintDeveloperswithMap() {
   //Write your code here
+  arr.map(printingarray);
+ 
+  function printingarray(arrayItems) {
+    if (arrayItems.profession === "developer") {
+      console.log(arrayItems);
+    }
+  }
 }
-
 function PrintDeveloperbyForEach() {
   //Write your code here
+  arr.forEach(arrayForEach);
+ 
+  function arrayForEach(arrayItems) {
+    if (arrayItems.profession === "developer") 
+    {
+      console.log(arrayItems);
+    }
+  }
 }
 
 function addData() {
   //Write your code here
+  let object={ id: 4, name: "susan", age: "20", profession: "intern"};
+  arr.push(object);
+  console.log(arr);
 }
 
 function removeAdmin() {
@@ -24,4 +41,11 @@ function removeAdmin() {
 
 function concatenateArray() {
   //Write your code here
+  let arrr2=[
+    {id:5,name:"gayatri",age:"22",profession:"engineer"},
+    {id:6 ,name:"manas",age:"23",profession:"data scientist"},
+    {id:7 ,name:"rashi" ,age:"22" ,profession:"mba"},
+  ];
+  let concateArray = arr.concat(arr2);
+  console.log(concateArray);
 }
